@@ -1,0 +1,28 @@
+[
+   {
+      "restaurantName": "The Oberoi Grand, Kolkata",
+      "restaurantRating": 4.4,
+      "latitude": 22.5616631,
+      "longitude": 88.3513038,
+      "restaurantAddress": "15, Jawaharlal Nehru Road, New Market Area, Dharmatala, Taltala, Kolkata",
+      "itemName": "Bhetki Paturi",
+      "rating": 4.6,
+      "price": 6.3,
+      "matchPercentage": 95,
+      "foodInfo": "Bhetki fish fillet marinated with mustard paste and spices, wrapped in banana leaves, and steamed to perfection.",
+      "tags": "bhetki fish, mustard paste, banana leaves, steaming, traditional Bengali, seafood, aromatic, tender"
+   },
+   {
+      "restaurantName": "Golden Parkk Hotel",
+      "restaurantRating": 4.1,
+      "latitude": 22.54764999999999,
+      "longitude": 88.34968669999999,
+      "restaurantAddress": "13, Ho Chi Minh Sarani, Kankaria Estates, Park Street area, Kolkata",
+      "itemName": "Bhetki Paturi",
+      "rating": 4.5,
+      "price": 6.0,
+      "matchPercentage": 85,
+      "foodInfo": "Bhetki fish fillet marinated with mustard paste and spices, wrapped in banana leaves, and steamed to perfection.",
+      "tags": "bhetki fish, mustard paste, banana leaves, steaming, traditional Bengali, seafood, aromatic, flavorful"
+   }
+]

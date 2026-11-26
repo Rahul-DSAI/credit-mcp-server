@@ -1,0 +1,6 @@
+# Install only the packages needed by the experiment you plan to run.
+mcp
+requests
+openai
+uvicorn
+langchain-community

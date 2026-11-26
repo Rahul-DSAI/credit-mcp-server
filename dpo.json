@@ -1,0 +1,49 @@
+{"input":{"messages":[{"role":"user","content":"Why do banks tend to shut down accounts associated with credit repair companies, and what conflict of interest do they perceive in such relationships?"}],"tools":[],"parallel_tool_calls":true},"preferred_output":[{"role":"assistant","content":"🏦 Banks tend to shut down accounts associated with credit repair companies for a couple of reasons. Firstly, these accounts are often flagged as high-risk due to the nature of credit repair activities. Secondly, banks may see a conflict of interest, as credit repair companies help people manage or challenge their credit—potentially clashing with how banks assess and manage credit risks."}],"non_preferred_output":[{"role":"assistant","content":"⚠️ Banks often shut down credit repair accounts due to risk concerns and conflicts with their services.\n\n👉 To know more in details UPGRADE TO PREMIUM"}]}
+{"input":{"messages":[{"role":"user","content":"How does the lack of credit education in schools impact individuals' buying decisions and financial well-being?"}],"tools":[],"parallel_tool_calls":true},"preferred_output":[{"role":"assistant","content":"📚 The lack of credit education in schools affects financial well-being significantly. Without learning how credit works, people may make poor choices—like taking high-interest loans or missing payments—that hurt their credit score. This leads to higher costs and fewer financial opportunities, creating long-term challenges in achieving stability and wealth."}],"non_preferred_output":[{"role":"assistant","content":"📉 Without credit education, people make poor choices that affect their finances long term.\n\n👉 To know more in details UPGRADE TO PREMIUM"}]}
+{"input":{"messages":[{"role":"user","content":"Why is credit considered a crucial factor in buying decisions, accounting for 75% of every purchase in the U.S.?"}],"tools":[],"parallel_tool_calls":true},"preferred_output":[{"role":"assistant","content":"💳 Credit is key to buying decisions because it affects your ability to borrow money affordably. A strong credit score means better loan terms, lower interest rates, and more purchasing power—whether you’re buying a car 🚗, a house 🏠, or even getting a credit card 💳."}],"non_preferred_output":[{"role":"assistant","content":"🧾 Credit affects loan terms and rates, so it influences most big purchases.\n\n👉 To know more in details UPGRADE TO PREMIUM"}]}
+{"input":{"messages":[{"role":"user","content":"How does the absence of credit education in schools raise concerns about individuals' understanding of credit and its significance in their lives?"}],"tools":[],"parallel_tool_calls":true},"preferred_output":[{"role":"assistant","content":"🎓 Without credit education, people often don’t understand how credit affects their lives. They may not realize how missed payments, maxed-out cards, or lack of credit history can block them from getting a loan, renting an apartment, or securing lower interest rates. It’s like trying to win a game without knowing the rules! 🧠"}],"non_preferred_output":[{"role":"assistant","content":"📘 No credit education means people may not understand how their credit affects loans or housing.\n\n👉 To know more in details UPGRADE TO PREMIUM"}]}
+{"input":{"messages":[{"role":"user","content":"In what ways is credit meant to be utilized naturally for risk assessment by credit bureaus, and why is this process important for financial institutions and consumers?"}],"tools":[],"parallel_tool_calls":true},"preferred_output":[{"role":"assistant","content":"📈 Credit bureaus assess risk by tracking how naturally people use and repay credit—like paying bills on time ⏰ or managing diverse accounts 🧾. This behavior helps banks decide if someone is a safe borrower. For consumers, good credit means access to better financial tools 💡, while for banks, it reduces lending risks."}],"non_preferred_output":[{"role":"assistant","content":"🧠 Bureaus use payment and account data to assess risk and help lenders make decisions.\n\n👉 To know more in details UPGRADE TO PREMIUM"}]}
+{"input":{"messages":[{"role":"user","content":"Why do credit bureaus prefer natural bill payments and account openings over strategic credit building for better approval odds?"}],"tools":[],"parallel_tool_calls":true},"preferred_output":[{"role":"assistant","content":"🔍 Credit bureaus prefer natural behaviors—like timely bill payments and steady account openings—because they show real-life responsibility 📅. Strategically opening accounts just to boost credit may seem artificial and unreliable for risk assessment, making natural habits more trustworthy in their eyes 👀."}],"non_preferred_output":[{"role":"assistant","content":"📉 Bureaus trust natural habits like bill payments more than strategic account tricks.\n\n👉 To know more in details UPGRADE TO PREMIUM"}]}
+{"input":{"messages":[{"role":"user","content":"How does a lack of credit knowledge contribute to keeping credit secrets and hindering consumers' financial well-being?"}],"tools":[],"parallel_tool_calls":true},"preferred_output":[{"role":"assistant","content":"🧠 When people don’t understand credit, they often miss out on the rules of the game. This can create 'credit secrets'—confusing aspects of how scores work, what hurts them, and how to fix them. Lack of awareness makes it harder to build a good score, leading to missed financial opportunities 💸."}],"non_preferred_output":[{"role":"assistant","content":"🔒 Without credit knowledge, people miss key habits and end up hurting their scores.\n\n👉 To know more in details UPGRADE TO PREMIUM"}]}
+{"input":{"messages":[{"role":"user","content":"Why do many consumers underestimate the importance and power of credit in their financial lives?"}],"tools":[],"parallel_tool_calls":true},"preferred_output":[{"role":"assistant","content":"💡 Many people don’t realize how credit affects nearly every part of their financial lives—from renting a home 🏠 to getting a job 💼. They might think credit is only about borrowing, but it’s really about trust and opportunity. When misunderstood, it’s often ignored—until it’s too late."}],"non_preferred_output":[{"role":"assistant","content":"🤷 Many ignore credit’s impact because they don’t realize how important it is.\n\n👉 To know more in details UPGRADE TO PREMIUM"}]}
+{"input":{"messages":[{"role":"user","content":"How can understanding the power of credit help individuals build strong credit scores with minimal effort?"}],"tools":[],"parallel_tool_calls":true},"preferred_output":[{"role":"assistant","content":"🚀 When you understand credit, you know that small habits—like on-time payments and not maxing out cards—can lead to big results 📈. You don’t need to game the system; just being consistent builds a strong credit profile over time ⏳."}],"non_preferred_output":[{"role":"assistant","content":"📈 Simple habits like paying on time build strong credit over time.\n\n👉 To know more in details UPGRADE TO PREMIUM"}]}
+{"input":{"messages":[{"role":"user","content":"What percentage of Americans actively work on improving their credit, and why is this number relatively low?"}],"tools":[],"parallel_tool_calls":true},"preferred_output":[{"role":"assistant","content":"📊 Only a small percentage of Americans actively work on improving their credit. Many don’t realize how powerful credit is—or they feel intimidated by it 😟. With more education and tools, that number could rise, giving more people a shot at financial freedom 🗽."}],"non_preferred_output":[{"role":"assistant","content":"📉 Few people work on credit because they don’t understand its impact.\n\n👉 To know more in details UPGRADE TO PREMIUM"}]}
+
+
+async def convert_to_dpo_jsonl(self, qa_data: list) -> list:
+        """
+        Converts structured Q&A data into DPO JSONL format (preferred vs non-preferred).
+        """
+        jsonl_data = []
+        try:
+            for qa in qa_data:
+                cleaned_question = self.clean_question(qa["question"])
+                # Assume qa["preferred_answer"] and qa["non_preferred_answer"] exist
+                formatted_entry = {
+                    "input": {
+                        "messages": [
+                            {"role": "user", "content": cleaned_question}
+                        ],
+                        "tools": [],
+                        "parallel_tool_calls": true
+                    },
+                    "preferred_output": [
+                        {"role": "assistant", "content": qa["preferred_answer"]}
+                    ],
+                    "non_preferred_output": [
+                        {"role": "assistant", "content": qa["non_preferred_answer"]}
+                    ]
+                }
+                jsonl_data.append(json.dumps(formatted_entry, ensure_ascii=False))
+            logger.info(
+                "Q&A successfully converted to DPO JSONL format in memory!",
+                extra={"moduleName": settings.MODULE, "serviceName": self.service_name}
+            )
+            return jsonl_data
+ 
+        except Exception as error:
+            logger.exception(
+                error,
+                extra={"moduleName": settings.MODULE, "serviceName": self.service_name}
+            )
+            return []

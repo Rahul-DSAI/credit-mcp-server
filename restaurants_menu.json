@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Subway W Oakton St",
+    "address": "4025 W Oakton St, Skokie IL 60076",
+    "latitude": 42.0262,
+    "longitude": -87.7285,
+    "menu": []
+  },
+  {
+    "name": "Domino's Pizza Oakton",
+    "address": "4510 Oakton, Skokie IL 60076",
+    "latitude": 42.0262,
+    "longitude": -87.7515,
+    "menu": []
+  },
+  {
+    "name": "Burger King West Dempster",
+    "address": "3850 West Dempster, Skokie IL 60076",
+    "latitude": 42.0411,
+    "longitude": -87.7285,
+    "menu": []
+  },
+  {
+    "name": "McDonald's Dempster Street",
+    "address": "4830 Dempster Street, Skokie IL 60077",
+    "latitude": 42.0411,
+    "longitude": -87.7515,
+    "menu": []
+  },
+  {
+    "name": "Subway W. Dempster Ave.",
+    "address": "Dempster Swift Shopping Center, 4925 W. Dempster Ave.",
+    "latitude": 42.0411,
+    "longitude": -87.7515,
+    "menu": []
+  }
+]
