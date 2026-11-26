@@ -103,4 +103,4 @@ This is a cleaned snapshot of experimental code. It is not presented as a harden
 
 ## License
 
-Add a license only after confirming you have permission to publish the source and included assets.
+Open Source
